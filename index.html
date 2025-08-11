@@ -195,6 +195,28 @@ img, video {
   }
 }
 
+    /* Default desktop view */
+.nav-buttons {
+  display: flex;
+  gap: 1rem; /* space between buttons */
+}
+
+/* Mobile fix */
+@media (max-width: 600px) {
+  .nav-buttons {
+    flex-direction: column; /* stack vertically */
+    align-items: stretch;
+    gap: 0.8rem; /* more breathing space */
+  }
+
+  .nav-buttons a,
+  .nav-buttons button {
+    padding: 12px 16px; /* make them easier to tap */
+    font-size: 16px; /* readable on small screens */
+  }
+}
+
+
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
@@ -359,3 +381,4 @@ img, video {
 
 </body>
 </html>
+
