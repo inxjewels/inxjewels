@@ -1,0 +1,125 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #b19cd9; /* Light purple */
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.search-form input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background: white;
+    color: #b19cd9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background: white;
+    color: #b19cd9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Welcome text animation */
+.welcome-text {
+    font-size: 4em;
+    margin-top: 150px;
+    animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.5; }
+    to { opacity: 1; transform: scale(1.05); }
+}
+
+.coming-soon {
+    font-size: 1.5em;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Login popup */
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 8px;
+    background: white;
+    color: #b19cd9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box .close-btn {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Show login popup when targeted */
+#login:target {
+    display: flex;
+}
+
+body {
+    background: #b19cd9;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 200px;
+}
