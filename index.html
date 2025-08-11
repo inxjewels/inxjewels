@@ -283,6 +283,44 @@ body {
     padding: 10px;
   }
 }
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    /* Reduce font size for welcome text and menu items */
+    .welcome-text {
+        font-size: 14px; /* smaller for mobile */
+    }
+
+    .header-links a {
+        font-size: 13px;
+        padding: 5px 8px; /* space between each link */
+    }
+
+    /* Arrange items side-by-side */
+    .header-links {
+        display: flex;
+        flex-wrap: wrap; /* allows items to move to next line if needed */
+        justify-content: center; /* center them */
+        gap: 8px; /* space between them */
+    }
+
+    /* Make icons smaller if you have them */
+    .header-links img, 
+    .header-links svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+    .welcome-text {
+        font-size: 12px;
+    }
+    .header-links a {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+}
 
 
 
@@ -450,6 +488,7 @@ body {
 
 </body>
 </html>
+
 
 
 
